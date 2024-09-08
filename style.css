@@ -1,12 +1,11 @@
-
-.gallery-container {
+.gallery {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
-.main-image {
+.principal {
     width: 600px;
     height: 400px;
     margin: 0 auto 20px;
@@ -16,18 +15,18 @@
     transition: transform 0.3s ease;
 }
 
-.main-image:hover {
+.principal:hover {
     transform: scale(1.05);
 }
 
-.thumbnail-container {
+.thumbnails {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
 
-.thumbnail-container img {
+.thumbnails img {
     width: 80px;
     height: 60px;
     object-fit: cover;
@@ -37,23 +36,23 @@
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.thumbnail-container img:hover {
+.thumbnails img:hover {
     transform: scale(1.1);
     border-color: #007BFF;
 }
 
-.thumbnail-container img.selected {
+.thumbnails img.selected {
     border-color: #007BFF;
     transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
-    .main-image {
+    .principal {
         width: 100%;
         height: auto;
     }
 
-    .thumbnail-container img {
+    .thumbnails img {
         width: 60px;
         height: 45px;
     }
